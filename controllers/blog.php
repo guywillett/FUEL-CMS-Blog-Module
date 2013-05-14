@@ -158,7 +158,7 @@ class Blog extends Blog_base_controller {
 			$field_values = array();
 			
 			// post comment
-			if (!empty($_POST))
+			if (!empty($_POST) && empty($_POST['send_mail']))
 			{
 				$field_values = $_POST;
 				
